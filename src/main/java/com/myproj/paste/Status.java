@@ -1,4 +1,4 @@
-package com.myproj.Paste;
+package com.myproj.paste;
 
 public enum Status {
     PUBLIC,

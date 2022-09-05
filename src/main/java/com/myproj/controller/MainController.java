@@ -1,6 +1,6 @@
-package com.myproj.Controller;
+package com.myproj.controller;
 
-import com.myproj.Paste.Paste;
+import com.myproj.api.request.PasteRequest;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
@@ -20,8 +20,8 @@ public class MainController {
     }
 
     @PostMapping("/")
-    public String add(@RequestBody Paste paste){
-        return paste.getText();
+    public String add(@RequestBody PasteRequest pasteRequest){
+        return pasteRequest.getText();
     }
 
 }
