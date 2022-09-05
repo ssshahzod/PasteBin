@@ -7,5 +7,4 @@ public class Paste {
     private String text;
     private Status status;
     private long expirationTimeSeconds;
-
 }
