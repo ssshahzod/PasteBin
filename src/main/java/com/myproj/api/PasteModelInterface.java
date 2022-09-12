@@ -8,6 +8,6 @@ import java.util.List;
 
 public interface PasteModelInterface {
     PasteResponse getByHash(String hash);
-    List<PasteResponse> getFirstPastes(int amount);
+    List<PasteResponse> getFirstPastes();
     PasteUrlResponse createPaste(PasteRequest pasteRequest);
 }

@@ -5,9 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.ZoneId;
 import java.util.Comparator;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -21,7 +19,7 @@ public class PasteRepositoryImpl implements PasteRepository{
     @Override
     public PasteBoxEntity getByHash(String hash) {
         PasteBoxEntity res = vault.get(hash);
-        if(res.equals(null)){
+        if(res == null){
             throw new EntityNotFoundException("Not found entity with hash: " + hash);
         }
         return res;

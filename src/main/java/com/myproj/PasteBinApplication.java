@@ -1,4 +1,4 @@
-package com.myproj.pastebin;
+package com.myproj;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

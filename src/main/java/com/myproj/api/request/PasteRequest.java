@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 public class PasteRequest {
-    private String text;
+    private String data;
     private Status status;
     private long expirationTimeSeconds;
 }
