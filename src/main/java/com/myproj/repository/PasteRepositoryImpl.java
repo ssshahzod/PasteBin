@@ -26,6 +26,8 @@ public class PasteRepositoryImpl implements PasteRepository{
     }
 
     @Override
+    //TODO: remove int amount param
+    //it should be parsed from applicatoin.properties
     public List<PasteBoxEntity> getListOfPublicAndAlive(int amount) {
         LocalDateTime nowTimestamp = LocalDateTime.now();
         return vault.values()

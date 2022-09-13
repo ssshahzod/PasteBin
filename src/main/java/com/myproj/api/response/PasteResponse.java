@@ -1,6 +1,5 @@
 package com.myproj.api.response;
 
-import com.myproj.paste.Status;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 
