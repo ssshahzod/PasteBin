@@ -9,6 +9,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
@@ -46,7 +47,7 @@ public class PasteModelImpl implements PasteModelInterface{
         pasteBoxEntity.setData(pasteRequest.getData());
         pasteBoxEntity.setPublic(pasteRequest.getStatus() == Status.PUBLIC);
         pasteBoxEntity.setHash(Integer.toHexString(hash));
-
+        pasteBoxEntity.setLifetime(LocalDateTime.now().plusSeconds(pasteRequest.getExpirationTimeSeconds()));
         repository.add(pasteBoxEntity);
 
         return new PasteUrlResponse(host + "/" + pasteBoxEntity.getHash());
