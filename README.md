@@ -18,4 +18,3 @@ Share your pastes with your friends! Paste your text and get a link that you can
 
 ### Also we can get pastes by id:
 ![getPaste1](https://user-images.githubusercontent.com/55853125/197254688-d1b7397e-8f71-4e3d-9479-af29f43a34e2.png)
-![getPaste2](https://user-images.githubusercontent.com/55853125/197254693-c548cb6a-2f8b-450b-8550-24d2da9ada59.png)
