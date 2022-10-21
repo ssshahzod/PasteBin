@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 public class PasteModelImpl implements PasteModelInterface{
 
     private String host;
-    private int publicListSize;
+    private int publicListSize = 5;
 
     private final PasteRepository repository;
     private AtomicInteger idGenerator = new AtomicInteger(0);
